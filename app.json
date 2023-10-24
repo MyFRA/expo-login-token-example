@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "AwesomeExpoProject",
+    "name": "awesomeexpoproject",
     "slug": "AwesomeExpoProject",
+    "scheme": "awesomeexpoproject",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourappname"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yourcompany.yourappname",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b181d93-d54c-45b2-9cae-a6968559e691"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
